@@ -69,7 +69,7 @@
       </p>
         </div>
          <a
-            href="/portfolio/Pradeep_Kishor_CV.pdf"
+            href="/Pradeep_Kishor_CV.pdf"
             download
             class="mt-8 inline-flex items-center gap-3 rounded-full border border-flax-smoke-400/40 px-6 py-3 text-sm font-semibold text-flax-smoke-200 transition-all duration-300 hover:border-flax-smoke-200 hover:bg-flax-smoke-200/5"
           >
