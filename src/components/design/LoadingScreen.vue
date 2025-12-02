@@ -22,7 +22,7 @@
           <span
             class="loading-text inline-block translate-y-full will-change-auto"
           >
-            Hetari
+           Pradeep Kishor
           </span>
         </h3>
 
@@ -30,17 +30,18 @@
           <span
             class="loading-text inline-block translate-y-full opacity-70 will-change-auto"
           >
-            &copy; Folio {{ new Date().getFullYear() }}
+            Portfolio &copy; {{ new Date().getFullYear() }}
           </span>
         </p>
 
         <p class="heading-6 overflow-clip font-normal">
+        <!--
           <span
             class="loading-text absolute bottom-10 left-5 inline-block font-mono sm:left-14"
           >
             Version 1.4v
           </span>
-
+        -->
           <span
             class="loading-text absolute right-5 bottom-10 inline-block animate-pulse font-mono sm:right-14"
           >

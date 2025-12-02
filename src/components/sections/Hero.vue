@@ -38,7 +38,7 @@
             </div>
 
             <p class="sr-only">
-              A freelance full-stack developer, cutting-edge technologies to
+              A freelance UI/UX-Designer, cutting-edge technologies to
               deliver comprehensive solutions for your business.
             </p>
             <p
@@ -56,7 +56,7 @@
                   class="contact"
                   label="Get in touch"
                 /> -->
-                <Button label="Get in touch" url="https://wa.me/967775367671" />
+                <Button label="Get in touch" url="https://wa.me/8867303611" />
               </div>
             </div>
           </div>
@@ -68,13 +68,14 @@
             <div class="overlay bg-flax-smoke-50 absolute inset-0 z-2"></div>
             <img
               id="profile-img"
-              :src="profile"
-              alt="Ebraheem profile"
+              :src="profile1"
+              alt="Pradeep profile"
               class="size-full scale-90 rounded-lg object-cover object-top brightness-110 grayscale"
             />
           </div>
 
           <!-- content-end justify-self-end  -->
+          <!--
           <div
             class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4"
           >
@@ -94,6 +95,7 @@
               </h3>
             </div>
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -105,12 +107,12 @@
   import { onBeforeMount, ref } from 'vue';
   import { MyName, Star } from '../design';
   import { Button } from '@/components/common';
-  import { profile } from '@/assets/images';
+  import profile1 from '@/assets/images/profile1.jpg';
   import { getAvailableForWorkDate, textSplitterIntoChar } from '@/functions';
   // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
   const whoAmI = ref(
-    'A freelance full-stack developer, cutting-edge technologies to deliver comprehensive solutions for your business.',
+    'A freelance UI/UX-Designer, cutting-edge technologies to deliver comprehensive solutions for your business.',
   );
   const AvailableForWorkDate = ref('');
 

@@ -1,5 +1,6 @@
 <template>
   <!-- common-padding  -->
+  <!--
   <section
     id="testimonials-section"
     class="common-padding relative mx-auto min-h-svh -translate-y-0 overflow-y-clip py-0 will-change-transform"
@@ -29,13 +30,13 @@
 
     <Slider />
   </section>
+  -->
 </template>
 
 <script setup lang="ts">
   // import gsap from 'gsap';
   // import { ScrollTrigger } from 'gsap/all';
-  // import { onMounted } from 'vue';
-  import { Slider } from '../design';
+  
 
   // gsap.registerPlugin(ScrollTrigger);
 

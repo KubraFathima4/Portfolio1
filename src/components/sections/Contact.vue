@@ -35,7 +35,7 @@
             :data-cal-config="dataCalConfig"
             label="Get in touch"
           /> -->
-          <Button label="Get in touch" url="https://wa.me/967775367671" />
+          <Button label="Get in touch" url="https://wa.me/6380101407" />
         </div>
       </div>
       <div
@@ -68,9 +68,9 @@
           <p class="w-full font-bold uppercase">For further inquiries</p>
           <Link
             class="text-flax-smoke-300 h-6 text-right font-medium tracking-wider lowercase"
-            label="hetari4all@gmail"
+            label="pradeepkishor.0227@gmail.com"
             :icon="true"
-            url="mailto:hetari4all@gmail"
+            url="mailto:pradeepkishor.0227@gmail.com"
           />
         </div>
       </div>

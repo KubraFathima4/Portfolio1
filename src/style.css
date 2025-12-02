@@ -17,17 +17,19 @@ layer(base);
   --font-body: 'body';
 
   /* Colors */
-  --color-flax-smoke-50: #f4f4f1;
-  --color-flax-smoke-100: #e8e8df;
-  --color-flax-smoke-200: #d2d3c3;
-  --color-flax-smoke-300: #b6b79f;
-  --color-flax-smoke-400: #9b9c7f;
-  --color-flax-smoke-500: #838566;
-  --color-flax-smoke-600: #62644c;
-  --color-flax-smoke-700: #4d4e3d;
-  --color-flax-smoke-800: #404133;
-  --color-flax-smoke-900: #38392e;
-  --color-flax-smoke-950: #1c1d16;
+    /* Colors */
+  --color-flax-smoke-50:  #f6f6f3;
+  --color-flax-smoke-100: #ededdf;
+  --color-flax-smoke-200: #e7e7d5; /* ✅ Secondary */
+  --color-flax-smoke-300: #d0d0bb;
+  --color-flax-smoke-400: #b4b49c;
+  --color-flax-smoke-500: #8f8f75;
+  --color-flax-smoke-600: #6b6b57;
+  --color-flax-smoke-700: #4e4e3f;
+  --color-flax-smoke-800: #343431; /* ✅ Primary */
+  --color-flax-smoke-900: #2a2a27;
+  --color-flax-smoke-950: #161615;
+
 
   /* Screens */
   --breakpoint-2xs: 420px;

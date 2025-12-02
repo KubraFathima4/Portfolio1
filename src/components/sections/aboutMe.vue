@@ -26,7 +26,7 @@
       <h3
         id="little-bit-about-me"
         v-html="aboutMe"
-        class="heading-1-alt lg:heading-1 section-heading col-span-full leading-none font-extrabold uppercase md:col-span-8 md:col-start-6"
+        class="heading-1-alt lg:heading-1 section-heading col-span-full leading-none font-bold uppercase md:col-span-8 md:col-start-6"
       ></h3>
     </div>
 
@@ -36,18 +36,19 @@
       >
         <img
           :src="profile2"
-          class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90 grayscale"
+          class="aspect-[1/1.5] rounded-lg object-cover object-top mix-blend-screen brightness-90"
           alt="Headshot of Ebraheem facing a camera"
         />
       </div>
       <div class="col-span-11 mt-10 md:col-span-8 md:col-start-6">
-        <p
+       <p
           class="heading-4 relative w-full max-w-[40ch] leading-snug font-medium text-balance"
         >
-          With a passion for design and development, I take projects from
-          ideation to launch, ensuring a seamless journey that leaves a lasting
-          positive impact on the digital landscape and your business.
+          I’m a UI/UX Designer focused on creating clean, intuitive, and user-centered
+          digital experiences. I enjoy transforming complex ideas into simple,
+          meaningful interfaces that feel natural and effortless to use.
         </p>
+
 
         <div
           class="text-flax-smoke-300 mt-[5%] flex justify-start gap-10 sm:gap-20"
@@ -55,15 +56,40 @@
           <p class="heading-6 text-flax-smoke-300/85 text-center text-nowrap">
             ( ABOUT ME )
           </p>
-          <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
-            Creating great web experiences is my primary focus. I ensure each
-            project leaves users with a feel-good sensation through meticulous
-            attention to detail and user-centric design principles. <br /><br />
-            When I'm not immersed in web development and design, you can find me
-            sharing insights about my freelance journey on <i>&Xopf;</i>,
-            loudly, playing music (Funk), or just relaxing.
-          </p>
+              <p class="heading-6 font-fancy w-full text-balance sm:max-w-[40ch]">
+        With hands-on experience in designing websites, dashboards, and CRM platforms,
+        I work across the full UI/UX process — from user research and wireframing to
+        visual design and prototyping. My approach is driven by usability, clarity,
+        and strong visual hierarchy to ensure every interface serves both user needs
+        and business goals. <br /><br />
+        I value collaboration and enjoy working closely with developers and product
+        teams to deliver pixel-perfect designs and smooth handoffs. Outside of design,
+        I’m constantly learning, exploring new UI trends, and refining my craft to
+        build better digital products.
+      </p>
         </div>
+         <a
+            href="/portfolio/Pradeep_Kishor_CV.pdf"
+            download
+            class="mt-8 inline-flex items-center gap-3 rounded-full border border-flax-smoke-400/40 px-6 py-3 text-sm font-semibold text-flax-smoke-200 transition-all duration-300 hover:border-flax-smoke-200 hover:bg-flax-smoke-200/5"
+          >
+            Download Resume
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="size-4"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+          </a>
+
       </div>
     </div>
   </section>
@@ -75,24 +101,27 @@
     xToZero,
     animateAboutMeSectionLeave,
   } from '@/animations';
-  import { profile2 } from '@/assets/images';
+  import  profile2 from '@/assets/images/profile2.jpg';
   import { textSplitterIntoChar } from '@/functions';
   import { onBeforeMount, onMounted, ref } from 'vue';
 
   const aboutMe = ref('ٍSelected Projects /');
+  
+
 
   // const initialPath = ref(`M0 0H${width.value}  V${height.value} H0 Z`);
   // const targetPath = ref(
   //   `M0 0H${width.value}L${width.value * 0.9} ${height.value}H${width.value * 0.1}L0 0Z`,
   // );
 
-  onBeforeMount(() => {
-    aboutMe.value = textSplitterIntoChar(
-      'Programmer, Developer, Web-animator/',
-      true,
-      true,
-    );
-  });
+ onBeforeMount(() => {
+  aboutMe.value = textSplitterIntoChar(
+    'UI/UX-Designer',
+    true,
+    true,
+  );
+});
+
 
   onMounted(() => {
     animateSplitText(

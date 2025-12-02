@@ -83,6 +83,7 @@
         textId="name"
       >
         <div id="name-container" class="group -m-10 h-fit cursor-pointer p-10">
+        <!--
           <h2
             id="name"
             class="font-fancy flex items-start text-xl font-extrabold uppercase md:text-3xl"
@@ -93,6 +94,7 @@
               >&copy;</span
             >
           </h2>
+          -->
         </div>
       </MagneticEffect>
 

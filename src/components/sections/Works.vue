@@ -56,15 +56,13 @@
           class="work-card @container"
         >
           <a class="group" target="_blank" :href="work.url">
-            <div
-              class="flex-center relative aspect-square overflow-clip rounded-lg"
-            >
+            <div class="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden rounded-lg">
               <img
-                alt="work-background"
-                loading="lazy"
-                class="absolute size-full object-cover select-none"
                 :src="work.imageBg"
+                alt="work-background"
+                class="absolute inset-0 w-full h-full object-cover select-none"
               />
+
               <div
                 class="flex-center z-10 aspect-4/3 size-full overflow-clip rounded-lg object-cover"
               >
@@ -116,8 +114,15 @@
   import { computed, onBeforeMount, onMounted, ref, useTemplateRef } from 'vue';
   import gsap from 'gsap';
   import { useWindowSize } from '@vueuse/core';
-  import { work1, work2, work3, work4, work5 } from '@/assets/videos';
-  import { workBg1, workBg2, workBg3, workBg4, workBg5 } from '@/assets/images';
+  import BSF from '@/assets/images/BSF.png';
+  import CMRS from '@/assets/images/CMRS.png';
+  import Stream from '@/assets/images/Stream.png';
+  import Paytrack from '@/assets/images/Paytrack.png';
+  import Skill from '@/assets/images/Skill.png';
+  import Paypal from '@/assets/images/Paypal.jpeg';
+  import CRM from '@/assets/images/CRM.png';
+  import partscentral from '@/assets/images/partscentral.png';
+  import AOW from '@/assets/images/AOW.jpeg';
   const videoRefs = useTemplateRef<HTMLVideoElement[]>('videoRefs');
 
   const isSmallScreen = computed(() => {
@@ -142,53 +147,88 @@
   };
 
   const selectedWorksProps = [
-    {
-      name: 'Madar',
-      category: 'Frontend',
-      tags: ['Vue.js', 'Tailwind', 'Gsap'],
-      videoSrc: work5,
-      imageBg: workBg5,
-      url: 'https://madar.services/',
-      year: '2025',
-    },
-    {
-      name: 'Iphone 15 Clone',
-      category: 'Frontend & Animation & 3D',
-      tags: ['Animation', '3D'],
-      videoSrc: work2,
-      imageBg: workBg2,
-      url: 'https://github.com/Hetari/iphone15-pro-clone',
-      year: '2024',
-    },
-    {
-      name: 'Axon',
-      category: 'Frontend & Documentation',
-      tags: ['Vue.js', 'Tailwind', 'AI'],
-      videoSrc: work3,
-      imageBg: workBg3,
-      url: 'https://github.com/Hetari/axon',
-
-      year: '2024',
-    },
-    {
-      name: 'Blogy',
-      category: 'Frontend & Backend',
-      tags: ['Vue.js', 'Laravel'],
-      videoSrc: work4,
-      imageBg: workBg4,
-      url: 'https://github.com/Hetari/blog',
-      year: '2023',
-    },
-    {
-      name: 'Pyutube',
-      category: 'CLI Tool & Cross Platform',
-      tags: ['Python', 'CLI', 'Youtube'],
-      videoSrc: work1,
-      imageBg: workBg1,
-      url: 'https://github.com/hetari/pyutube',
-      year: '2024',
-    },
-  ];
+  {
+    name: "AOW Information Technology Website",
+    category: "UI/UX & Web Design",
+    tags: ["Website", "Responsive Design"],
+    videoSrc: "", // add preview video if you have
+    imageBg: AOW, // add background image
+    url: "https://aow.co.in/",
+    year: "2024",
+  },
+  {
+    name: "Bharat Sports Foundation Website",
+    category: "UI/UX & Web Design",
+    tags: ["Website", "Design System"],
+    videoSrc: "",
+    imageBg: BSF,
+    url: "https://bharatsportsfoundation.org/",
+    year: "2024",
+  },
+  {
+    name: "Part Central – E-Commerce Website",
+    category: "UI/UX & E-Commerce",
+    tags: ["Dashboard", "E-commerce"],
+    videoSrc: "",
+    imageBg: partscentral,
+    url: "https://partscentral.us/",
+    year: "2024",
+  },
+  {
+    name: "CRM Dashboard – Part Central",
+    category: "UI/UX & Dashboard Design",
+    tags: ["Figma", "Dashboard"],
+    videoSrc: "",
+    imageBg: CRM,
+    url: "https://www.figma.com/design/cUybypZs5qHkCzgYUSlftK/CRM--Partcentral",
+    year: "2025",
+  },
+  {
+    name: "PayTrack – Salary & PF App",
+    category: "UI/UX Mobile App",
+    tags: ["Mobile", "Finance App"],
+    videoSrc: "",
+    imageBg: Paytrack,
+    url: "https://www.figma.com/design/YtY5hltZmOC9r5VrXjhcxQ/Pay-Track",
+    year: "2025",
+  },
+  {
+    name: "Lil Stream – Kids OTT Platform",
+    category: "UI/UX & OTT",
+    tags: ["Kids App", "OTT"],
+    videoSrc: "",
+    imageBg: Stream,
+    url: "https://www.figma.com/design/oVqecnVhMa5Fo5cPJAEBia/Lil-Stream",
+    year: "2025",
+  },
+  {
+    name: "CMRL Smartwatch UI",
+    category: "Smartwatch UI Design",
+    tags: ["Wearable UI", "Metro App"],
+    videoSrc: "",
+    imageBg: CMRS,
+    url: "https://www.figma.com/design/ZpmC6sDNElS0Lif1ZPLjxA/CMRL",
+    year: "2025",
+  },
+  {
+    name: "SkillKwiz – Skill Assessment Platform",
+    category: "UI/UX Platform",
+    tags: ["Assessment", "Platform"],
+    videoSrc: "",
+    imageBg: Skill,
+    url: "https://www.figma.com/design/6S32UsKqvOOAcWJIzxH77P/Skill-Kwizz---Project",
+    year: "2025",
+  },
+  {
+    name: "Parent Pal",
+    category: "UI/UX & Parenting Website",
+    tags: ["Parenting", "Blog"],
+    videoSrc: "",
+    imageBg: Paypal,
+    url: "https://www.figma.com/design/IPK59EuHmPOeagqjsGqjIV/Parent-Pal",
+    year: "2024",
+  },
+];
 
   // Reusable function to handle forward scroll animation
   const createForwardTimeline = (
