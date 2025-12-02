@@ -56,7 +56,7 @@
                   class="contact"
                   label="Get in touch"
                 /> -->
-                <Button label="Get in touch" url="https://wa.me/8867303611" />
+                <Button label="Get in touch" url="https://wa.me/6380101407" />
               </div>
             </div>
           </div>
