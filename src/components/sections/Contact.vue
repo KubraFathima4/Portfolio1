@@ -41,7 +41,9 @@
       <div
         class="absolute bottom-5 flex w-full items-center justify-center px-5 md:justify-between"
       >
+      
         <div class="hidden md:flex">
+        <!--
           <div class="border-flax-smoke-300 relative border">
             <Vue3Lottie
               ref="customControl"
@@ -50,6 +52,8 @@
               :autoPlay="true"
             />
           </div>
+          -->
+          <!--
           <div
             class="flex-center py border-flax-smoke-300 text-flax-smoke-300 w-fit flex-col border border-l-0 font-mono"
           >
@@ -62,6 +66,7 @@
               Available Sep '24
             </p>
           </div>
+          -->
         </div>
 
         <div class="heading-6 text-flax-smoke-500 w-fit">

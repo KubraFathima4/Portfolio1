@@ -26,7 +26,7 @@
           </span>
         </h3>
 
-        <p class="overflow-clip">
+        <p class="overflow-clip text-xl">
           <span
             class="loading-text inline-block translate-y-full opacity-70 will-change-auto"
           >

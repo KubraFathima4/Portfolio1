@@ -13,9 +13,9 @@
       y="50"
       font-size="50"
       font-family="Inter, Arial, sans-serif"
-      font-weight="550"
+      font-weight="560"
       letter-spacing="0"
-      textLength="580"
+      textLength="600"
       lengthAdjust="spacingAndGlyphs"
     >
       PRADEEP KISHOR

@@ -38,12 +38,8 @@
       <div
         class="text-flax-smoke-100 sticky top-12 col-span-5 hidden h-fit w-full overflow-hidden text-[22vw] leading-[0.8] font-semibold md:flex"
       >
-        <span class="font-title! relative -tracking-wider">0</span>
-        <span
-          id="index"
-          class="font-title! relative -tracking-wider will-change-transform"
-          >{{ index + 1 }}.</span
-        >
+        <span id="index" class="font-title! relative -tracking-wider">{{ formattedIndex }}.</span>
+
       </div>
       <aside
         @mouseenter="showCursor"
@@ -56,26 +52,18 @@
           class="work-card @container"
         >
           <a class="group" target="_blank" :href="work.url">
-            <div class="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden rounded-lg">
-              <img
+            <div
+              class="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden rounded-lg"
+            >
+             <img
                 :src="work.imageBg"
-                alt="work-background"
-                class="absolute inset-0 w-full h-full object-cover select-none"
+                alt="work background"
+                :class="work.name === 'EZON Website Redesign'
+                  ? 'w-full h-full object-contain'
+                  : 'w-full h-full object-contain sm:object-cover object-center'
+                "
               />
 
-              <div
-                class="flex-center z-10 aspect-4/3 size-full overflow-clip rounded-lg object-cover"
-              >
-                <!-- autoplay="false" -->
-                <video
-                  ref="videoRefs"
-                  :src="work.videoSrc"
-                  muted
-                  :autoplay="false"
-                  type="video/webm"
-                  class="size-[80%] rounded-md object-contain blur transition-all duration-500 ease-in-out"
-                ></video>
-              </div>
             </div>
             <div>
               <p class="heading-6 font-title! mt-[2%] mb-[1%] leading-none">
@@ -87,7 +75,9 @@
                 </h3>
                 <div class="flex gap-1.5 select-none">
                   <p
-                    class="border-flax-smoke-300 hover:bg-flax-smoke-300 hover:text-flax-smoke-900 rounded-full border px-4 py-2 transition-[background-color,color] duration-500 ease-in-out"
+                    class="border-flax-smoke-300 hover:bg-flax-smoke-300 hover:text-flax-smoke-900 
+                    rounded-full border px-4 py-2 text-lg sm:text-sm leading-none whitespace-nowrap
+                    transition-[background-color,color] duration-500 ease-in-out"
                     v-for="tag in work.tags"
                     :key="tag"
                   >
@@ -123,6 +113,7 @@
   import CRM from '@/assets/images/CRM.png';
   import partscentral from '@/assets/images/partscentral.png';
   import AOW from '@/assets/images/AOW.jpeg';
+  import Ezon from'@/assets/images/Ezon.png';
   const videoRefs = useTemplateRef<HTMLVideoElement[]>('videoRefs');
 
   const isSmallScreen = computed(() => {
@@ -146,35 +137,13 @@
     tl.reverse();
   };
 
+   const formattedIndex = computed(() => {
+  const num = index.value + 1
+  return num < 10 ? `0${num}` : `${num}`
+})
+
   const selectedWorksProps = [
-  {
-    name: "AOW Information Technology Website",
-    category: "UI/UX & Web Design",
-    tags: ["Website", "Responsive Design"],
-    videoSrc: "", // add preview video if you have
-    imageBg: AOW, // add background image
-    url: "https://aow.co.in/",
-    year: "2024",
-  },
-  {
-    name: "Bharat Sports Foundation Website",
-    category: "UI/UX & Web Design",
-    tags: ["Website", "Design System"],
-    videoSrc: "",
-    imageBg: BSF,
-    url: "https://bharatsportsfoundation.org/",
-    year: "2024",
-  },
-  {
-    name: "Part Central – E-Commerce Website",
-    category: "UI/UX & E-Commerce",
-    tags: ["Dashboard", "E-commerce"],
-    videoSrc: "",
-    imageBg: partscentral,
-    url: "https://partscentral.us/",
-    year: "2024",
-  },
-  {
+    {
     name: "CRM Dashboard – Part Central",
     category: "UI/UX & Dashboard Design",
     tags: ["Figma", "Dashboard"],
@@ -219,7 +188,34 @@
     url: "https://www.figma.com/design/6S32UsKqvOOAcWJIzxH77P/Skill-Kwizz---Project",
     year: "2025",
   },
+    {
+    name: "EZON Website Redesign",
+    category: "UI/UX Website",
+    tags: ["Website", "Redesign"],
+    videoSrc: "",
+    imageBg: Ezon, // Add the EZON image import here
+    url: "https://www.figma.com/design/pKNC7bz7JpS2Jo2HUVuUXR/The-Ezon---Redesign",
+    year: "2025",
+  },
+    {
+    name: "Part Central – E-Commerce Website",
+    category: "UI/UX & E-Commerce",
+    tags: ["Dashboard", "E-commerce"],
+    videoSrc: "",
+    imageBg: partscentral,
+    url: "https://partscentral.us/",
+    year: "2024",
+  },
   {
+    name: "AOW Information Technology Website",
+    category: "UI/UX & Web Design",
+    tags: ["Website", "Responsive Design"],
+    videoSrc: "", // add preview video if you have
+    imageBg: AOW, // add background image
+    url: "https://aow.co.in/",
+    year: "2024",
+  },
+   {
     name: "Parent Pal",
     category: "UI/UX & Parenting Website",
     tags: ["Parenting", "Blog"],
@@ -228,6 +224,16 @@
     url: "https://www.figma.com/design/IPK59EuHmPOeagqjsGqjIV/Parent-Pal",
     year: "2024",
   },
+  {
+    name: "Bharat Sports Foundation Website",
+    category: "UI/UX & Web Design",
+    tags: ["Website", "Design System"],
+    videoSrc: "",
+    imageBg: BSF,
+    url: "https://bharatsportsfoundation.org/",
+    year: "2024",
+  },
+
 ];
 
   // Reusable function to handle forward scroll animation
@@ -282,7 +288,7 @@
       }
     });
   };
-
+ 
   const stopAllVideos = () => {
     videoRefs.value?.map((video: HTMLVideoElement) => {
       if (video && !video.paused) {

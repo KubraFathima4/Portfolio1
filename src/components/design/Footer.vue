@@ -18,10 +18,15 @@
 
         <div class="mt-2 space-y-1">
           <template v-if="section.title === 'Contact'">
-            <p class="heading-6">pradeepkishor.0227@gmail.com</p>
-            <p class="heading-6">+91 6380101407</p>
-            <p class="heading-6">India · Remote</p>
+              <p class="heading-6">
+                  <a href="mailto:pradeepkishor.0227@gmail.com">pradeepkishor.0227@gmail.com</a>
+              </p>
+              <p class="heading-6">
+                  <a href="tel:+916380101407">+91 6380101407</a>
+              </p>
+              <p class="heading-6">India · Remote</p>
           </template>
+
 
           <template v-else>
             <p
@@ -58,7 +63,20 @@ const linkedinOnly = socialLinks.filter(
 
 const footerSections = [
   { title: 'Menu', links: navbarLinks },
-  { title: 'Socials', links: linkedinOnly },
-  { title: 'Contact' },
+  {
+    title: 'Socials',
+    links: [
+      {
+        label: 'linkedin',
+        url: 'https://www.linkedin.com/in/pradeep-kishor-2455b4280'
+      },
+      {
+        label: 'behance',
+        url: 'https://www.behance.net/pradeepkishor1'
+      }
+    ]
+  },
+  { title: 'Contact' }
 ]
+
 </script>

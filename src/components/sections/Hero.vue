@@ -75,7 +75,7 @@
           </div>
 
           <!-- content-end justify-self-end  -->
-          <!--
+          
           <div
             class="relative col-span-8 size-full overflow-clip text-end sm:col-span-4"
           >
@@ -86,16 +86,18 @@
               <p
                 class="3xl:text-base block leading-snug font-medium -tracking-tight uppercase"
               >
-                Available for freelance work
+                Design with Purpose, Work with Empathy.
               </p>
-              <h3
-                class="3xl:heading-1 heading-1-alt font-fancy block leading-none font-bold -tracking-tight"
-              >
-                {{ AvailableForWorkDate }}
+             <h3
+                      class="font-fancy block leading-none font-bold -tracking-tight
+                            text-xl sm:text-xl md:text-2xl"
+                    >
+                Thoughtful UI, Meaningful UX.
               </h3>
+
             </div>
           </div>
-          -->
+        
         </div>
       </div>
     </div>
@@ -112,7 +114,7 @@
   // import { dataCalConfig, dataCalLink, dataCalNamespace } from '@/data';
 
   const whoAmI = ref(
-    'A freelance UI/UX-Designer, cutting-edge technologies to deliver comprehensive solutions for your business.',
+    'UI/UX Designer turning ideas into purposeful, elegant user experiences.I combine strategy, design, and empathy to create products people love to use.',
   );
   const AvailableForWorkDate = ref('');
 

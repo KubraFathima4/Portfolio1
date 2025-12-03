@@ -54,8 +54,8 @@
           <Link
             class="font-medium tracking-wider"
             tag="p"
-            label="hetari4all@gmail.com"
-            url="mailto:hetari4all@gmail.com"
+            label="pradeepkishor.0227@gmail.com"
+            url="mailto:pradeepkishor.0227@gmail.com"
           />
           <div class="mt-6 flex flex-wrap justify-start gap-1">
             <Button
@@ -98,12 +98,12 @@
         </div>
       </MagneticEffect>
 
-      <div class="flex justify-start">
+      <div class="flex justify-start text-left w-full">
         <p
-          class="heading-6 font-fancy text-flax-smoke-400 hidden font-bold uppercase select-none md:block"
+          class="heading-6 font-fancy text-flax-smoke-400 font-bold uppercase select-none md:block"
         >
-          available for freelancers <br />
-          work and collaboration
+          Design with purpose <br />
+          Create with empathy
         </p>
       </div>
       <div class="flex">
