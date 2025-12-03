@@ -14,7 +14,7 @@
         <p
           class="heading-6 text-flax-smoke-300/85 col-span-4 col-start-0 text-center text-nowrap md:col-start-4"
         >
-          ( SERVICES )
+          ( SKILLS )
         </p>
         <p
           class="heading-4 font-fancy col-span-8 w-full text-balance sm:font-semibold md:col-span-5"
