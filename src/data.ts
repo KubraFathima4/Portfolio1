@@ -32,11 +32,14 @@ const navbarLinks = [
 ];
 
 const socialLinks = [
- 
   {
-    label: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/hetaridev/',
+    label: 'linkedin',
+    url: 'https://www.linkedin.com/in/pradeep-kishor-2455b4280',
   },
+  {
+    label: 'behance',
+    url: 'https://www.behance.net/pradeepkishor1',
+  }
 ];
 
 const resourceLinks = [

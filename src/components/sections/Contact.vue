@@ -84,9 +84,9 @@
 </template>
 
 <script setup lang="ts">
-  import { earthLottie } from '@/assets/videos';
+ 
   import { Button } from '../common';
-  import { Vue3Lottie } from 'vue3-lottie';
+  
   import Link from '../Link.vue';
   import { contact } from '@/assets/videos';
   import { onBeforeMount, onMounted, ref } from 'vue';

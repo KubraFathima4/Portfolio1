@@ -54,28 +54,13 @@
   </footer>
 </template>
 <script setup lang="ts">
-import { navbarLinks, socialLinks } from '@/data'
+import { navbarLinks,socialLinks } from '@/data'
 import { Link } from '..'
 
-const linkedinOnly = socialLinks.filter(
-  (l) => l.label.toLowerCase() === 'linkedin'
-)
 
 const footerSections = [
   { title: 'Menu', links: navbarLinks },
-  {
-    title: 'Socials',
-    links: [
-      {
-        label: 'linkedin',
-        url: 'https://www.linkedin.com/in/pradeep-kishor-2455b4280'
-      },
-      {
-        label: 'behance',
-        url: 'https://www.behance.net/pradeepkishor1'
-      }
-    ]
-  },
+  { title: 'Socials', links: socialLinks },
   { title: 'Contact' }
 ]
 
