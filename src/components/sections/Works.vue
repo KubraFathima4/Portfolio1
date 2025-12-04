@@ -83,11 +83,7 @@
                   >
                     <span>{{ tag }}</span>
                   </p>
-                  <p
-                    class="border-flax-smoke-300 bg-flax-smoke-300 text-flax-smoke-900 hover:text-flax-smoke-300 rounded-full border px-4 py-2 transition-[background-color,color] duration-500 ease-in-out hover:bg-transparent"
-                  >
-                    <span>{{ work.year }}</span>
-                  </p>
+                 
                 </div>
               </div>
             </div>
@@ -144,67 +140,12 @@
 
   const selectedWorksProps = [
     {
-    name: "CRM Dashboard – Part Central",
-    category: "UI/UX & Dashboard Design",
-    tags: ["Figma", "Dashboard"],
-    videoSrc: "",
-    imageBg: CRM,
-    url: "https://www.figma.com/design/cUybypZs5qHkCzgYUSlftK/CRM--Partcentral",
-    year: "2025",
-  },
-  {
-    name: "PayTrack – Salary & PF App",
-    category: "UI/UX Mobile App",
-    tags: ["Mobile", "Finance App"],
-    videoSrc: "",
-    imageBg: Paytrack,
-    url: "https://www.figma.com/design/YtY5hltZmOC9r5VrXjhcxQ/Pay-Track",
-    year: "2025",
-  },
-  {
-    name: "Lil Stream – Kids OTT Platform",
-    category: "UI/UX & OTT",
-    tags: ["Kids App", "OTT"],
-    videoSrc: "",
-    imageBg: Stream,
-    url: "https://www.figma.com/design/oVqecnVhMa5Fo5cPJAEBia/Lil-Stream",
-    year: "2025",
-  },
-  {
-    name: "CMRL Smartwatch UI",
-    category: "Smartwatch UI Design",
-    tags: ["Wearable UI", "Metro App"],
-    videoSrc: "",
-    imageBg: CMRS,
-    url: "https://www.figma.com/design/ZpmC6sDNElS0Lif1ZPLjxA/CMRL",
-    year: "2025",
-  },
-  {
-    name: "SkillKwiz – Skill Assessment Platform",
-    category: "UI/UX Platform",
-    tags: ["Assessment", "Platform"],
-    videoSrc: "",
-    imageBg: Skill,
-    url: "https://www.figma.com/design/6S32UsKqvOOAcWJIzxH77P/Skill-Kwizz---Project",
-    year: "2025",
-  },
-    {
-    name: "EZON Website Redesign",
-    category: "UI/UX Website",
-    tags: ["Website", "Redesign"],
-    videoSrc: "",
-    imageBg: Ezon, // Add the EZON image import here
-    url: "https://www.figma.com/design/pKNC7bz7JpS2Jo2HUVuUXR/The-Ezon---Redesign",
-    year: "2025",
-  },
-    {
-    name: "Part Central – E-Commerce Website",
+    name: "Part Central E-Commerce Website",
     category: "UI/UX & E-Commerce",
     tags: ["Dashboard", "E-commerce"],
     videoSrc: "",
     imageBg: partscentral,
     url: "https://partscentral.us/",
-    year: "2024",
   },
   {
     name: "AOW Information Technology Website",
@@ -213,16 +154,6 @@
     videoSrc: "", // add preview video if you have
     imageBg: AOW, // add background image
     url: "https://aow.co.in/",
-    year: "2024",
-  },
-   {
-    name: "Parent Pal",
-    category: "UI/UX & Parenting Website",
-    tags: ["Parenting", "Blog"],
-    videoSrc: "",
-    imageBg: Paypal,
-    url: "https://www.figma.com/design/IPK59EuHmPOeagqjsGqjIV/Parent-Pal",
-    year: "2024",
   },
   {
     name: "Bharat Sports Foundation Website",
@@ -231,9 +162,63 @@
     videoSrc: "",
     imageBg: BSF,
     url: "https://bharatsportsfoundation.org/",
-    year: "2024",
   },
-
+    {
+    name: "CRM Dashboard – Part Central",
+    category: "UI/UX & Dashboard Design",
+    tags: ["Figma", "Dashboard"],
+    videoSrc: "",
+    imageBg: CRM,
+    url: "https://www.figma.com/design/cUybypZs5qHkCzgYUSlftK/CRM--Partcentral",
+  },
+   {
+    name: "SkillKwiz – Skill Assessment Platform",
+    category: "UI/UX Platform",
+    tags: ["Assessment", "Platform"],
+    videoSrc: "",
+    imageBg: Skill,
+    url: "https://www.figma.com/design/6S32UsKqvOOAcWJIzxH77P/Skill-Kwizz---Project",
+  },
+  {
+    name: "PayTrack – Salary & PF App",
+    category: "UI/UX Mobile App",
+    tags: ["Mobile", "Finance App"],
+    videoSrc: "",
+    imageBg: Paytrack,
+    url: "https://www.figma.com/design/YtY5hltZmOC9r5VrXjhcxQ/Pay-Track",
+  },
+  {
+    name: "Lil Stream – Kids OTT Platform",
+    category: "UI/UX & OTT",
+    tags: ["Kids App", "OTT"],
+    videoSrc: "",
+    imageBg: Stream,
+    url: "https://www.figma.com/design/oVqecnVhMa5Fo5cPJAEBia/Lil-Stream",
+  },
+  {
+    name: "CMRL Smartwatch UI",
+    category: "Smartwatch UI Design",
+    tags: ["Wearable UI", "Metro App"],
+    videoSrc: "",
+    imageBg: CMRS,
+    url: "https://www.figma.com/design/ZpmC6sDNElS0Lif1ZPLjxA/CMRL",
+  },
+    {
+    name: "EZON Website Redesign",
+    category: "UI/UX Website",
+    tags: ["Website", "Redesign"],
+    videoSrc: "",
+    imageBg: Ezon, // Add the EZON image import here
+    url: "https://www.figma.com/design/pKNC7bz7JpS2Jo2HUVuUXR/The-Ezon---Redesign",
+  },
+   {
+    name: "Parent Pal",
+    category: "UI/UX & Parenting Website",
+    tags: ["Parenting", "Blog"],
+    videoSrc: "",
+    imageBg: Paypal,
+    url: "https://www.figma.com/design/IPK59EuHmPOeagqjsGqjIV/Parent-Pal",
+  },
 ];
 
   // Reusable function to handle forward scroll animation
